@@ -1,2 +1,5 @@
 Some input
 Another line of input
+just a test
+of adding text by append to a file
+and this is the last line
