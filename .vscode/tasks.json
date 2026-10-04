@@ -4,7 +4,7 @@
         {
             "type": "cppbuild",
             "label": "C/C++: gcc build active file",
-            "command": "C:/mingw64/bin/gcc.exe",
+            "command": "C:/msys64/ucrt64/bin/gcc.exe",
             "args": [
                 "-g",
                 "${file}",
@@ -12,7 +12,10 @@
                 "${fileDirname}/${fileBasenameNoExtension}.exe"
             ],
             "options": {
-                "cwd": "${fileDirname}"
+                "cwd": "${fileDirname}",
+                "env": {
+                    "PATH": "C:\\msys64\\ucrt64\\bin;${env:PATH}"
+                }
             },
             "presentation": {
                 "reveal": "silent",
