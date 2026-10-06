@@ -21,6 +21,17 @@ int main()
     printf("Manu: %s\n", manu_id);
     printf("Supp: %s\n", supp_id);
 
+    char error1[50];
+    char error2[50];
+
+    substring(product_code, error1, 200, 5);
+
+    printf("Error 1: %s\n", error1);
+
+    substring(product_code, error2, 14, 100);
+
+    printf("Error 2: %s\n", error2);
+
     return 0;
 }
 
